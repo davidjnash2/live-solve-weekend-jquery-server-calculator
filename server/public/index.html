@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.7.0.js"></script>
+    <script src="client.js"></script>
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Server Calculator</title>
+</head>
+<body>
+    <h1>Server Side Calculator</h1>
+
+    <!-- user inputs calculatoins -->
+    <form id="equation-form">
+        <input id="number-one" type="number" placeholder="number 1">
+        <button class="operation" id="plus">+</button>
+        <button class="operation" id="minus">-</button>
+        <button class="operation" id="multiply">*</button>
+        <button class="operation" id="divide">/</button>
+        <input id="number-two" type="number" placeholder="number 2">
+        <button id="calculate">=</button>
+        <button id="clear">C</button>
+    </form>
+    
+    <!-- current/most recent answer -->
+    <h1 id="newest-answer"></h1>
+
+    <!-- list of equations -->
+    <ul id="equation-history"></ul>
+</body>
+</html>
